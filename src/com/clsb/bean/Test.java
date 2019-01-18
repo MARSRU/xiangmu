@@ -8,7 +8,7 @@ public class Test {
 	public static void main(String[] args) {
 
 		//
-		// Person per = new Person() ;
+		// Person perLCL = new Person() ;
 		//
 		// per.setName("张三");
 		//
@@ -19,9 +19,9 @@ public class Test {
 	      ApplicationContext context = new ClassPathXmlApplicationContext("abc.xml");
 		
 		 // 通过 bean 节点 调用 id 进行 注入 ， 返回 注入的对象
-		 Person perllc = (Person) context.getBean("per");
+		 Person perLCL = (Person) context.getBean("per");
 		
-		 System.out.println(perllc);
+		 System.out.println(perLCL);
 
 
 	}
