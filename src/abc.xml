@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- 要为 bean 文件 准备 注入的 数据 -->
+	<bean id="per" class="com.clsb.bean.Person">
+		<!--属性 注入的方式 其实 调用的 就是 对应的 javaBean 中的 set方法 -->
+		<property name="name" value="wangwu"></property>
+		<property name="age" value="1011"></property>
+		<property name="sex" value="男"></property>
+		<property name="id" value="1"></property>
+
+	</bean>
+
+
+
+	<bean name="per1" class="com.clsb.bean.Person">
+            <!--通过 构造方法  进行 注入   -->
+		<constructor-arg value="李彩龙"></constructor-arg>
+		
+		<constructor-arg value="12">
+		
+		</constructor-arg>
+		<constructor-arg value="sex">
+		</constructor-arg>
+		
+		<constructor-arg value="1">
+		</constructor-arg>
+	</bean>
+
+
+
+
+
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
